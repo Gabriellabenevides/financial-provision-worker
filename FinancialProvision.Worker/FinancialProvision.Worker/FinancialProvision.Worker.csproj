@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-FinancialProvision.Worker-083fb8f0-5a79-4fb4-849e-5039b1736ca3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.3" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Users\gabri\Downloads\financial-provision-worker\FinancialProvision.Worker.Application\FinancialProvision.Worker.Application.csproj" />
+    <ProjectReference Include="..\..\..\..\Users\gabri\Downloads\financial-provision-worker\FinancialProvision.Worker.Infraestructure\FinancialProvision.Worker.Infraestructure.csproj" />
+  </ItemGroup>
+</Project>
